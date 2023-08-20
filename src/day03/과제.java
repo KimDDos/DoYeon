@@ -33,20 +33,20 @@ public class 과제 {
 			    for(; ; ) {
 				if(0 < num && num < comNumber) {
 					System.out.println("Up!");
-					break a;
+					break;
 				} else if(50 >= num && num > comNumber) {
 					System.out.println("Down~!");
-					break a;
+					break;
 				} else if(num == comNumber) {
 					System.out.println("정답!");
-					break a;
+					break;
 				} else if(0 >= num || num > 50) {
 					num = scan.nextInt();
 					System.out.println("1~50까지의 랜덤한 숫자를 맞춰주세요!");
-					break a;
+					break;
 				} else {
 					System.out.println("잘못된 입력입니다.");
-					break a;
+					break;
 				}
 			}
 		}
