@@ -214,6 +214,10 @@ public class EzenComputer {
 		}
 	}
 	
+	public int getCnt() {
+		return cnt;
+	}
+
 	public String[] getPeriod() {
 		return period;
 	}
