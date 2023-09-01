@@ -5,7 +5,8 @@ import java.util.Scanner;
 public class ProductMain {
 
 	public static void main(String[] args) {
-
+		/* 반복적으로 메뉴를 등록하는 프로그램
+		 * */
 		Scanner sc = new Scanner(System.in);
 		Product it = new Product();
 		Product[] item = new Product[10];
@@ -59,6 +60,7 @@ public class ProductMain {
 			}
 
 		}
+		sc.close();
 	}
 }
 

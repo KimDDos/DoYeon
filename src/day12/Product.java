@@ -16,14 +16,14 @@ public class Product {
 	// 메서드
 	// 1. 메뉴추가
 	public void insertMenu(String menu, String price) {
-		setMenu(menu);
-		setPrice(price);
+		this.menu = menu;
+		this.price = price;
 	}
 	
 	
 	// 2. 출력
 	public void printMenu() {
-		System.out.println(menu+" : "+price+"원");
+		System.out.println("[ 메뉴 :"+menu+" : "+price+"원 ]");
 	}
 	
 	
