@@ -16,7 +16,6 @@ public class Lotto {
 		 * 5등 => 3자리 일치
 		 * 꽝~!
 		 * */
-		// 배열을 생성
 		
 		// 배열을 생성
 		int lotto[] = new int[7]; // 당첨번호
