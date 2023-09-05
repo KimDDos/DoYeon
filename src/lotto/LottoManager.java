@@ -1,4 +1,4 @@
-package day14;
+package lotto;
 
 import java.util.Scanner;
 

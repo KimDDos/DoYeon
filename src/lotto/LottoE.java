@@ -1,4 +1,4 @@
-package day14;
+package lotto;
 
 public class LottoE extends Lotto{
 
