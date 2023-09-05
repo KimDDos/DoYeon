@@ -25,7 +25,6 @@ public class Lotto_과제풀이 {
 			if(!isContain(r)) { // 중복되지 않는다면 !
 				numbers[cnt] = r;
 				cnt++;
-				
 			}
 		}
 	}
