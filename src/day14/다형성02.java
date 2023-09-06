@@ -46,7 +46,7 @@ public class 다형성02 {
 		cnt++;
 		
 		System.out.println("--DownCasting--");
-		test.testDownCasting(aniList, cnt);
+		test.agentIDDownCasting(aniList, cnt);
 	}
 	
 	public void moveAnimal(Animal animal) {
@@ -55,21 +55,21 @@ public class 다형성02 {
 	// 부며 형으로 객체를 생서앟게 되면 자식이 개별적으로 가지고ㅇ 있는 메서드를 사용할 수 없음
 	// 자식이 개별로 가지고 있는 메서드를 사용하려면, 다운 케슽팅을 해줘야하 ㅁ함
 	// 부모의 형이 아닌 자식의 형태로 변환을 해줘야 함.
-//	public void testDownCasting(Animal[] list, int cnt) {
-//		for(int i=0; i<cnt; i++) {
-//			Animal animal = list[i];
-//			if(ani instanceof Human) {
-//				Human human = (Human)ani;
-//				human.readBook();
-//			} else if(ani instanceof Tiger) {
-//				Tiger tiger = (Tiger)ani;
-//				tiger.hunting();
-//			} else if(ani instanceof Eagle) {
-//				Eagle eagel = (Eagle)ani;
-//				Eagle.flying();
-//			}
-//		}
-//	}
+	public void agentIDDownCasting(Animal[] list, int cnt) {
+		for(int i=0; i<cnt; i++) {
+			Animal ani = list[i];
+			if(ani instanceof Human) {
+				Human human = (Human)ani;
+				human.readBook();
+			} else if(ani instanceof Tiger) {
+				Tiger tiger = (Tiger)ani;
+				tiger.hunting();
+			} else if(ani instanceof Eagle) {
+				Eagle eagle = (Eagle)ani;
+				eagle.fiying();
+			}
+		}
+	}
 }
 	
 
