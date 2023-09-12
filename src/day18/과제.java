@@ -47,6 +47,14 @@ public class 과제 {
 				break;
 			case 2:	
 				System.out.println(memoList);
+//				memoList.sort(new Comparator<Word>() {
+//
+//					@Override
+//					public int compare(Word o1, Word o2) {
+//						// TODO Auto-generated method stub
+//						return o1-o2;
+//					}
+//				});
 				
 				
 				break;
