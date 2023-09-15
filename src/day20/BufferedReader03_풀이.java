@@ -5,9 +5,8 @@ import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.HashMap;
-import java.util.Map;
 
-public class BufferedReader03 {
+public class BufferedReader03_풀이 {
 
 	public static void main(String[] args) throws IOException {
 		/* BufferedReader, FileReader 를 통해서 out.txt 파일을
@@ -17,26 +16,26 @@ public class BufferedReader03 {
 		 * Integer.parseInt(값) : String => int
 		 * */
 		
-		BufferedReader br = new BufferedReader(new FileReader("out.txt"));
-		HashMap<String, Integer> map = new HashMap<>();
+		BufferedReader br = new BufferedReader(new FileReader("Out.txt"));
+		HashMap<String, Integer> map = new HashMap<String, Integer>();
 		int sum=0;
+		
+		// while((br.readLine()) != null)  <- 이것도 됨 ㅋ
 		while(true) {
 			String line = br.readLine();
-			if(line==null) {
+			if(line == null) {
 				break;
 			}
 			String name = line.substring(0, line.indexOf(" "));
-			String num = line.substring(line.indexOf(" ")+1, line.length());
-			int score = Integer.parseInt(num);
+			int score = Integer.parseInt(line.substring(line.indexOf(" ")+1));
 			map.put(name, score);
-			sum += map.get(name);
 		}
-		for(String tmp : map.keySet()) {
-			System.out.println(tmp+":"+map.get(tmp)+"점");
-			
+		System.out.println(map);
+		for(String key:map.keySet()) {
+			System.out.println(key+":"+map.get(key));
+			sum += map.get(key);
 		}
-		System.out.println("합계:"+sum+"점, 인원수:"+map.size()+"명");
-		br.close();
+		System.out.println("합계:"+sum+" | 인원수:"+map.size());
 	}
 
 }
