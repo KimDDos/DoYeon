@@ -1,15 +1,3 @@
-<<<<<<< HEAD
-package day20;
-
-public class BufferedReader03 {
-
-	public static void main(String[] args) {
-		/* 
-		 * */
-	}
-
-}
-=======
 package day20;
 
 import java.io.BufferedReader;
@@ -52,4 +40,3 @@ public class BufferedReader03 {
 	}
 
 }
->>>>>>> 7e55295e1e8297d877e4178f3e9beaad02402913
