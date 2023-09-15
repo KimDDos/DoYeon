@@ -1,0 +1,4 @@
+1. Apple : 사과
+2. Car : 자동차
+3. double : 두배
+4. easy : 숩다수워
