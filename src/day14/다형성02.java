@@ -23,6 +23,7 @@ public class 다형성02 {
 		
 		// Tiger h = (Tiger)hAnimal;
 		Tiger t = (Tiger)tAnimal;
+		// t.hunting();
 		t.hunting();
 		
 		// instanceof 연산자 : true / false
@@ -44,7 +45,6 @@ public class 다형성02 {
 		cnt++;
 		aniList[cnt] = eAnimal;
 		cnt++;
-		
 		System.out.println("--DownCasting--");
 		test.agentIDDownCasting(aniList, cnt);
 	}
@@ -55,7 +55,11 @@ public class 다형성02 {
 	// 부며 형으로 객체를 생서앟게 되면 자식이 개별적으로 가지고ㅇ 있는 메서드를 사용할 수 없음
 	// 자식이 개별로 가지고 있는 메서드를 사용하려면, 다운 케슽팅을 해줘야하 ㅁ함
 	// 부모의 형이 아닌 자식의 형태로 변환을 해줘야 함.
+<<<<<<< HEAD
 	public void agentIDDownCasting(Animal[] list, int cnt) {
+=======
+	public void testDownCasting(Animal[] list, int cnt) {
+>>>>>>> 7e55295e1e8297d877e4178f3e9beaad02402913
 		for(int i=0; i<cnt; i++) {
 			Animal ani = list[i];
 			if(ani instanceof Human) {
@@ -67,6 +71,11 @@ public class 다형성02 {
 			} else if(ani instanceof Eagle) {
 				Eagle eagle = (Eagle)ani;
 				eagle.fiying();
+<<<<<<< HEAD
+=======
+			} else {
+				System.out.println("casting error");
+>>>>>>> 7e55295e1e8297d877e4178f3e9beaad02402913
 			}
 		}
 	}
