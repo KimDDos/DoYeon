@@ -91,6 +91,7 @@ public class Student {
 		// 마지막 번지는 null로 초기화
 		subjectList[subCount-1] = null;
 		subCount--;
+		
 	}
 
 	public String getStdNum() {
